@@ -28,5 +28,13 @@ int main()
     for (int i = 0; i < p; i++)
         for (int j = 0; j < r; j++)
             need[i][j] = max[i][j] - allocation[i][j];
+    vector<int> available(r);
+    for (int i = 0; i < r; i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < p; j++)
+            sum += allocation[j][i];
+        available[i] = resources[i] - sum;
+    }
     return 0;
 }
