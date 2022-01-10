@@ -41,5 +41,27 @@ int main()
     for (int i = 0; i < p; i++)
         finish[i] = 0;
     int count = 0;
+    while (count < p)
+    {
+        int B = 0;
+        for (int i = 0; i < p; i++)
+        {
+            if (!finish[i])
+            {
+                int j;
+                for (j = 0; j < r; j++)
+                    if (need[i][j] > available[j])
+                        break;
+                if (j == r)
+                {
+                    for (int k = 0; k < r; k++)
+                        available[k] += allocation[i][k];
+                    safe[count++] = i;
+                    finish[i] = 1;
+                    B = 1;
+                }
+            }
+        }
+    }
     return 0;
 }
