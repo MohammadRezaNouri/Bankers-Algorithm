@@ -62,6 +62,11 @@ int main()
                 }
             }
         }
+        if (!B)
+        {
+            cout << "System is not safe";
+            return 0;
+        }
     }
     return 0;
 }
