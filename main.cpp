@@ -36,5 +36,10 @@ int main()
             sum += allocation[j][i];
         available[i] = resources[i] - sum;
     }
+    vector<int> safe(p);
+    vector<int> finish(p);
+    for (int i = 0; i < p; i++)
+        finish[i] = 0;
+    int count = 0;
     return 0;
 }
