@@ -68,5 +68,9 @@ int main()
             return 0;
         }
     }
+    cout << "System is safe" << endl
+         << "Safe sequence is : ";
+    for (int i = 0; i < p; i++)
+        cout << 'P' << safe[i] << ' ';
     return 0;
 }
