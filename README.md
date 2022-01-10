@@ -25,3 +25,5 @@ g++ main.cpp -o app -O2
 ```
 ## In the future
 Become a graphic application.
+## License
+Licensed under GPLv3. See [LICENSE.md](https://github.com/MohammadRezaNouri/Bankers-Algorithm/blob/master/LICENSE.md).
