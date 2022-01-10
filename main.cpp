@@ -24,5 +24,9 @@ int main()
     for (int i = 0; i < p; i++)
         for (int j = 0; j < r; j++)
             cin >> max[i][j];
+    vector<vector<int>> need(p, vector<int>(r));
+    for (int i = 0; i < p; i++)
+        for (int j = 0; j < r; j++)
+            need[i][j] = max[i][j] - allocation[i][j];
     return 0;
 }
